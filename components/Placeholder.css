@@ -1,0 +1,42 @@
+.placeholder-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+  }
+  
+  .placeholder-title {
+    color: #2a9d8f;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .placeholder-text {
+    color: #264653;
+    font-size: 1.25rem;
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  /* Je kunt de kleuren hieronder aanpassen */
+  :root {
+    --main-bg-color: #F5F5F5;
+    --title-color: #264653;
+    --text-color: #264653;
+  }
+  
+  .placeholder-container {
+    background-color: var(--main-bg-color);
+  }
+  
+  .placeholder-title {
+    color: var(--title-color);
+  }
+  
+  .placeholder-text {
+    color: var(--text-color);
+  }
+  
