@@ -40,7 +40,7 @@ const Placeholder = () => {
   return (
     <div className="placeholder-container">
       <Helmet>
-      <title>Meerwaardebelasting Berekenen</title>
+      <title>meerwaardebelastingberekenen.be</title>
         <meta name="description" content="Help Belgen hun meerwaardebelasting op aandelen te optimaliseren." />
         <meta name="keywords" content="meerwaardebelasting, meerwaarde, belasting, aandelen, optimaliseren, strategie, België" />         
       </Helmet>
