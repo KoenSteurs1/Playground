@@ -58,7 +58,7 @@
     margin-bottom: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-    width: 100%;
+    width: 300px; 
     max-width: 400px;
   }
   
@@ -75,4 +75,27 @@
   .email-form button:hover {
     background-color: #21867a;
   }
+
+  /* Media query voor smartphones */
+@media (max-width: 768px) {
+  .placeholder-title {
+    font-size: 2rem;
+  }
+
+  .placeholder-text {
+    font-size: 1.5rem;
+  }
+
+  .email-form label {
+    font-size: 1.5rem;
+  }
+
+  .email-form input {
+    font-size: 1.25rem;
+  }
+
+  .email-form button {
+    font-size: 1.25rem;
+  }
+}
   

@@ -4,6 +4,7 @@ import './Placeholder.css';
 
 const Placeholder = () => {
   const [email, setEmail] = useState('');
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleInputChange = (event) => {
     setEmail(event.target.value);
@@ -24,6 +25,7 @@ const Placeholder = () => {
     )
     .then((response) => {
       console.log('SUCCESS!', response.status, response.text);
+      setIsSubmitted(true); // Zet isSubmitted op true wanneer het verzenden succesvol is
     })
     .catch((error) => {
       console.log('FAILED...', error);
@@ -43,7 +45,7 @@ const Placeholder = () => {
       <br></br><br></br>Laat ons samen trachten de impact van deze belasting op uw portefeuille te beperken.
       </p>
       <form className="email-form" onSubmit={handleSubmit}>
-        <label htmlFor="email">Hou me op de hoogte:</label>
+        <label htmlFor="email">Wil je op de hoogte blijven? Vul dan hieronder je e-mail adres in.</label>
         <input
           type="email"
           id="email"
@@ -53,7 +55,8 @@ const Placeholder = () => {
           required
         />
         <button type="submit">Verzenden</button>
-      </form>      
+      </form>
+      {isSubmitted && (<p><strong>Bedankt, we houden je op de hoogte!</strong></p>)}    
     </div>
   );
 };
