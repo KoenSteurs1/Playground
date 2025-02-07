@@ -79,23 +79,23 @@
   /* Media query voor smartphones */
 @media (max-width: 768px) {
   .placeholder-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .placeholder-text {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .email-form label {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .email-form input {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   .email-form button {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }
   
