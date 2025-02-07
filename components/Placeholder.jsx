@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import emailjs from 'emailjs-com';
 import './Placeholder.css';
 
@@ -38,6 +39,11 @@ const Placeholder = () => {
 
   return (
     <div className="placeholder-container">
+      <Helmet>
+      <title>Meerwaardebelasting Berekenen</title>
+        <meta name="description" content="Help Belgen hun meerwaardebelasting op aandelen te optimaliseren." />
+        <meta name="keywords" content="meerwaardebelasting, meerwaarde, belasting, aandelen, optimaliseren, strategie, België" />         
+      </Helmet>
       <h1 className="placeholder-title">Welkom bij meerwaardebelastingberekenen.be </h1>
       <p className="placeholder-text">
       De recente invoering van een meerwaardebelasting op aandelen door de nieuwe Belgische regering heeft vragen opgeroepen over hoe beleggers hun portefeuilles het beste kunnen beheren. Van zodra de details van deze belasting bekend zijn zal deze website u de mogelijkheid bieden om vooruit te plannen en strategisch te reageren.
