@@ -1,8 +1,8 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import './Berekening.css'; // Pas aan naar je eigen CSS-bestand
+import './Home.css'; // Pas aan naar je eigen CSS-bestand
 
-const Berekening = () => {
+const Home = () => {
   return (
     <div>
       <Helmet>
@@ -10,9 +10,9 @@ const Berekening = () => {
         <meta name="robots" content="noindex" /> {/* Zorgt ervoor dat zoekmachines deze pagina niet indexeren */}
       </Helmet>
       <h1>Home</h1>
-      <p>Hier komt hopelijk binnenkort een mooie website.</p>
+      <p>Hier komt hopelijk binnenkort een mooie website :-).</p>
     </div>
   );
 };
 
-export default Berekening;
+export default Home;

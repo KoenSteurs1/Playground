@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Placeholder from '../components/Placeholder.jsx';
-import Berekening from '../components/Berekening.jsx'; // 
+import Home from '../components/Home.jsx'; // 
 
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route exact path="/" element={<Placeholder />}  />
-          <Route path="/berekening" element={<Berekening />} />
+          <Route path="/home" element={<Home />} />
         </Routes>
       </div>
     </Router>
